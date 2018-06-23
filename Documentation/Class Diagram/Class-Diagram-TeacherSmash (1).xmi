@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_yXT38Ha-EeiFX4HwoivBqg" name="model">
+  <eAnnotations xmi:id="_yXT38Xa-EeiFX4HwoivBqg" source="genmymodel">
+    <details xmi:id="_yXT38na-EeiFX4HwoivBqg" key="uuid" value="_V71IEHa5EeiFX4HwoivBqg"/>
+    <details xmi:id="_yXT383a-EeiFX4HwoivBqg" key="author" value="FBIAgentDead"/>
+  </eAnnotations>
+  <packageImport xmi:id="_yXT39Ha-EeiFX4HwoivBqg">
+    <eAnnotations xmi:id="_yXT39Xa-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT39na-EeiFX4HwoivBqg" key="uuid" value="_V71IEXa5EeiFX4HwoivBqg"/>
+    </eAnnotations>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#/"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT393a-EeiFX4HwoivBqg" name="Float">
+    <eAnnotations xmi:id="_yXT3-Ha-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT3-Xa-EeiFX4HwoivBqg" key="uuid" value="_l8dcUFjnEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" xmi:id="_yXT3-na-EeiFX4HwoivBqg" name="Using Unity.engine">
+    <eAnnotations xmi:id="_yXT3-3a-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT3_Ha-EeiFX4HwoivBqg" key="uuid" value="_F5CGoFjoEDaI37z1vFesbg"/>
+    </eAnnotations>
+    <ownedComment xmi:id="_yXT3_Xa-EeiFX4HwoivBqg" annotatedElement="_yXT4AHa-EeiFX4HwoivBqg" body="Deze class kan op elk character zonder wat te verranderen behalve mode switchers zoals joey">
+      <eAnnotations xmi:id="_yXT3_na-EeiFX4HwoivBqg" source="genmymodel">
+        <details xmi:id="_yXT3_3a-EeiFX4HwoivBqg" key="uuid" value="_-s9ksVjrEDaI37z1vFesbg"/>
+      </eAnnotations>
+    </ownedComment>
+    <packagedElement xsi:type="uml:Class" xmi:id="_yXT4AHa-EeiFX4HwoivBqg" name="Characters">
+      <eAnnotations xmi:id="_yXT4AXa-EeiFX4HwoivBqg" source="genmymodel">
+        <details xmi:id="_yXT4Ana-EeiFX4HwoivBqg" key="uuid" value="_dUcdoFjnEDaI37z1vFesbg"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_yXT4A3a-EeiFX4HwoivBqg" name="movementSpeed" visibility="private" type="_yXT393a-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4BHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4BXa-EeiFX4HwoivBqg" key="uuid" value="_ijHh8VjnEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4Bna-EeiFX4HwoivBqg" name="canJump" visibility="private">
+        <eAnnotations xmi:id="_yXT4B3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4CHa-EeiFX4HwoivBqg" key="uuid" value="_tlCXQFjnEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4CXa-EeiFX4HwoivBqg" name="recoverAbility" visibility="private">
+        <eAnnotations xmi:id="_yXT4Cna-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4C3a-EeiFX4HwoivBqg" key="uuid" value="_xsoewVjnEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4DHa-EeiFX4HwoivBqg" name="jumpHeight" visibility="private" type="_yXT393a-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4DXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Dna-EeiFX4HwoivBqg" key="uuid" value="_3SYmUFjnEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4D3a-EeiFX4HwoivBqg" name="rechargeTime" visibility="private">
+        <eAnnotations xmi:id="_yXT4EHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4EXa-EeiFX4HwoivBqg" key="uuid" value="_83PWAVjnEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4Ena-EeiFX4HwoivBqg" name="healthProcentage" visibility="public">
+        <eAnnotations xmi:id="_yXT4E3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4FHa-EeiFX4HwoivBqg" key="uuid" value="_hYP00FjoEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4FXa-EeiFX4HwoivBqg" name="ultReady" visibility="private">
+        <eAnnotations xmi:id="_yXT4Fna-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4F3a-EeiFX4HwoivBqg" key="uuid" value="_2UQUsFjoEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4GHa-EeiFX4HwoivBqg" name="characterLives">
+        <eAnnotations xmi:id="_yXT4GXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Gna-EeiFX4HwoivBqg" key="uuid" value="_4__swFjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_yXT4G3a-EeiFX4HwoivBqg" client="_yXT4AHa-EeiFX4HwoivBqg" supplier="_yXT4Qna-EeiFX4HwoivBqg" contract="_yXT4Qna-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4HHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4HXa-EeiFX4HwoivBqg" key="uuid" value="_rLt6AljoEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_yXT4Hna-EeiFX4HwoivBqg" name="AttackGrounded">
+        <eAnnotations xmi:id="_yXT4H3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4IHa-EeiFX4HwoivBqg" key="uuid" value="_NYBLQFjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4IXa-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4Ina-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4I3a-EeiFX4HwoivBqg" key="uuid" value="_PQODAFjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+        <ownedParameter xmi:id="_yXT4JHa-EeiFX4HwoivBqg" name="parameter" type="_yXT4mXa-EeiFX4HwoivBqg" isUnique="false">
+          <eAnnotations xmi:id="_yXT4JXa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4Jna-EeiFX4HwoivBqg" key="uuid" value="_cUOr4FjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4J3a-EeiFX4HwoivBqg" name="AttackAir">
+        <eAnnotations xmi:id="_yXT4KHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4KXa-EeiFX4HwoivBqg" key="uuid" value="_PtRLYFjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4Kna-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4K3a-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4LHa-EeiFX4HwoivBqg" key="uuid" value="_Q8QHAFjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+        <ownedParameter xmi:id="_yXT4LXa-EeiFX4HwoivBqg" name="parameter" type="_yXT4lna-EeiFX4HwoivBqg" isUnique="false">
+          <eAnnotations xmi:id="_yXT4Lna-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4L3a-EeiFX4HwoivBqg" key="uuid" value="_g_eTAFjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4MHa-EeiFX4HwoivBqg" name="Movement">
+        <eAnnotations xmi:id="_yXT4MXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Mna-EeiFX4HwoivBqg" key="uuid" value="_S9tBYFjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4M3a-EeiFX4HwoivBqg" name="returnParameter" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4NHa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4NXa-EeiFX4HwoivBqg" key="uuid" value="_TzrnIFjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4Nna-EeiFX4HwoivBqg" name="PickUp">
+        <eAnnotations xmi:id="_yXT4N3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4OHa-EeiFX4HwoivBqg" key="uuid" value="_VODd8FjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4OXa-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4Ona-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4O3a-EeiFX4HwoivBqg" key="uuid" value="_WnL0EFjqEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4PHa-EeiFX4HwoivBqg" name="DoEmote">
+        <eAnnotations xmi:id="_yXT4PXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Pna-EeiFX4HwoivBqg" key="uuid" value="_Mw2LoFjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4P3a-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4QHa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4QXa-EeiFX4HwoivBqg" key="uuid" value="_NxuZ0FjrEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Interface" xmi:id="_yXT4Qna-EeiFX4HwoivBqg" name="Health">
+      <eAnnotations xmi:id="_yXT4Q3a-EeiFX4HwoivBqg" source="genmymodel">
+        <details xmi:id="_yXT4RHa-EeiFX4HwoivBqg" key="uuid" value="_cmgkIFjoEDaI37z1vFesbg"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_yXT4RXa-EeiFX4HwoivBqg" name="getLives" visibility="private" type="_yXT4n3a-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4Rna-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4R3a-EeiFX4HwoivBqg" key="uuid" value="_kfXWwFjoEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_yXT4SHa-EeiFX4HwoivBqg" name="SetPrecentage">
+        <eAnnotations xmi:id="_yXT4SXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Sna-EeiFX4HwoivBqg" key="uuid" value="_ClFNIVjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4S3a-EeiFX4HwoivBqg" name="returnParameter" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4THa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4TXa-EeiFX4HwoivBqg" key="uuid" value="_FDZCoFjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4Tna-EeiFX4HwoivBqg" name="Update">
+        <eAnnotations xmi:id="_yXT4T3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4UHa-EeiFX4HwoivBqg" key="uuid" value="_GW_YgFjpEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4UXa-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4Una-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4U3a-EeiFX4HwoivBqg" key="uuid" value="_J2dwEVjpEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4VHa-EeiFX4HwoivBqg" name="SetLives">
+        <eAnnotations xmi:id="_yXT4VXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Vna-EeiFX4HwoivBqg" key="uuid" value="_DN1ZwVjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4V3a-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4WHa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4WXa-EeiFX4HwoivBqg" key="uuid" value="_FisYUFjqEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Class" xmi:id="_yXT4Wna-EeiFX4HwoivBqg" name="GameStarts">
+      <eAnnotations xmi:id="_yXT4W3a-EeiFX4HwoivBqg" source="genmymodel">
+        <details xmi:id="_yXT4XHa-EeiFX4HwoivBqg" key="uuid" value="_gYpHEVjqEDaI37z1vFesbg"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_yXT4XXa-EeiFX4HwoivBqg" name="GetPlayer1" visibility="private" type="_yXT4nHa-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4Xna-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4X3a-EeiFX4HwoivBqg" key="uuid" value="_n3CLQFjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4YHa-EeiFX4HwoivBqg" name="GetPlayer2" visibility="private" type="_yXT4nHa-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4YXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4Yna-EeiFX4HwoivBqg" key="uuid" value="_s11AgFjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4Y3a-EeiFX4HwoivBqg" name="startAnimation" visibility="private">
+        <eAnnotations xmi:id="_yXT4ZHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4ZXa-EeiFX4HwoivBqg" key="uuid" value="_B8-ZYFjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Boolean"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_yXT4Zna-EeiFX4HwoivBqg" name="GameTimer" visibility="public" type="_yXT4nHa-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4Z3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4aHa-EeiFX4HwoivBqg" key="uuid" value="_WlOPwFjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <interfaceRealization xmi:id="_yXT4aXa-EeiFX4HwoivBqg" client="_yXT4Wna-EeiFX4HwoivBqg" supplier="_yXT4hHa-EeiFX4HwoivBqg" contract="_yXT4hHa-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4ana-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4a3a-EeiFX4HwoivBqg" key="uuid" value="_oDLUYVjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </interfaceRealization>
+      <ownedOperation xmi:id="_yXT4bHa-EeiFX4HwoivBqg" name="InstantiateCharacters">
+        <eAnnotations xmi:id="_yXT4bXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4bna-EeiFX4HwoivBqg" key="uuid" value="_yjcqoFjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4b3a-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4cHa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4cXa-EeiFX4HwoivBqg" key="uuid" value="_0t4h4FjqEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4cna-EeiFX4HwoivBqg" name="StartAnouncer">
+        <eAnnotations xmi:id="_yXT4c3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4dHa-EeiFX4HwoivBqg" key="uuid" value="_2aB6oFjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4dXa-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4dna-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4d3a-EeiFX4HwoivBqg" key="uuid" value="_36zw4FjqEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4eHa-EeiFX4HwoivBqg" name="StartMapMusic">
+        <eAnnotations xmi:id="_yXT4eXa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4ena-EeiFX4HwoivBqg" key="uuid" value="_52Qw8FjqEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4e3a-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4fHa-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4fXa-EeiFX4HwoivBqg" key="uuid" value="_7J2fwFjqEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_yXT4fna-EeiFX4HwoivBqg" name="StartGameTimer">
+        <eAnnotations xmi:id="_yXT4f3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4gHa-EeiFX4HwoivBqg" key="uuid" value="_dDX-8FjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4gXa-EeiFX4HwoivBqg" name="returnParameter" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4gna-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4g3a-EeiFX4HwoivBqg" key="uuid" value="_fhIa0FjrEDaI37z1vFesbg"/>
+          </eAnnotations>
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#//Integer"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xsi:type="uml:Interface" xmi:id="_yXT4hHa-EeiFX4HwoivBqg" name="GameTimer">
+      <eAnnotations xmi:id="_yXT4hXa-EeiFX4HwoivBqg" source="genmymodel">
+        <details xmi:id="_yXT4hna-EeiFX4HwoivBqg" key="uuid" value="_g1WbwVjrEDaI37z1vFesbg"/>
+      </eAnnotations>
+      <ownedAttribute xmi:id="_yXT4h3a-EeiFX4HwoivBqg" name="getTime" visibility="private" type="_yXT4Wna-EeiFX4HwoivBqg">
+        <eAnnotations xmi:id="_yXT4iHa-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4iXa-EeiFX4HwoivBqg" key="uuid" value="_ihmiMFjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_yXT4ina-EeiFX4HwoivBqg" name="Update">
+        <eAnnotations xmi:id="_yXT4i3a-EeiFX4HwoivBqg" source="genmymodel">
+          <details xmi:id="_yXT4jHa-EeiFX4HwoivBqg" key="uuid" value="_wvztUFjrEDaI37z1vFesbg"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_yXT4jXa-EeiFX4HwoivBqg" name="returnParameter" type="_yXT4k3a-EeiFX4HwoivBqg" isUnique="false" direction="return">
+          <eAnnotations xmi:id="_yXT4jna-EeiFX4HwoivBqg" source="genmymodel">
+            <details xmi:id="_yXT4j3a-EeiFX4HwoivBqg" key="uuid" value="_0D-z0FjrEDaI37z1vFesbg"/>
+          </eAnnotations>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4kHa-EeiFX4HwoivBqg" name="Class">
+    <eAnnotations xmi:id="_yXT4kXa-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4kna-EeiFX4HwoivBqg" key="uuid" value="_nlxHAFjoEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4k3a-EeiFX4HwoivBqg" name="void">
+    <eAnnotations xmi:id="_yXT4lHa-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4lXa-EeiFX4HwoivBqg" key="uuid" value="_J2dwEFjpEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4lna-EeiFX4HwoivBqg" name="KeyCode">
+    <eAnnotations xmi:id="_yXT4l3a-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4mHa-EeiFX4HwoivBqg" key="uuid" value="_gCl0AFjpEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4mXa-EeiFX4HwoivBqg" name="KeyCode2">
+    <eAnnotations xmi:id="_yXT4mna-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4m3a-EeiFX4HwoivBqg" key="uuid" value="_VOSHcFjqEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4nHa-EeiFX4HwoivBqg" name="Playerprefs">
+    <eAnnotations xmi:id="_yXT4nXa-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4nna-EeiFX4HwoivBqg" key="uuid" value="_r1zt8FjqEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xsi:type="uml:DataType" xmi:id="_yXT4n3a-EeiFX4HwoivBqg" name="Characters">
+    <eAnnotations xmi:id="_yXT4oHa-EeiFX4HwoivBqg" source="genmymodel">
+      <details xmi:id="_yXT4oXa-EeiFX4HwoivBqg" key="uuid" value="_uKDMAFjrEDaI37z1vFesbg"/>
+    </eAnnotations>
+  </packagedElement>
+</uml:Model>
