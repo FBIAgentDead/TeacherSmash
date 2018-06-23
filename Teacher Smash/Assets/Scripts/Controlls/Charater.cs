@@ -49,7 +49,10 @@ public class Charater : MonoBehaviour {
             characterAnim.Play("jump");
             canJump = false;
         }
-        
+        if(Input.GetKeyDown(KeyCode.Keypad0))
+        {
+            Attacks("Neutrall");
+        }
     }
     private void Awake()
     {
@@ -71,6 +74,13 @@ public class Charater : MonoBehaviour {
         if(leftRight == 2)
         {
             characterPush.velocity = transform.up * jumpHeight;
+        }
+    }
+    void Attacks(string attacks)
+    {
+        if (attacks == "Neutral")
+        {
+            characterAnim.Play("Attack1");
         }
     }
 }
