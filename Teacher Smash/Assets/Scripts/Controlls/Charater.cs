@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Charater : MonoBehaviour {
+
     private Rigidbody characterPush;
     private Animator characterAnim;
     private SpriteRenderer characterFlip;
+
     public float movementSpeed = 10;
     public float jumpHeight;
     private bool canJump = true;
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Platform")
@@ -18,6 +21,7 @@ public class Charater : MonoBehaviour {
         }
             
     }
+
     private void Update()
     {
         if(Input.GetKey(KeyCode.LeftArrow))
@@ -54,6 +58,7 @@ public class Charater : MonoBehaviour {
             Attacks("Neutrall");
         }
     }
+
     private void Awake()
     {
         characterPush = GetComponent<Rigidbody>();
@@ -76,6 +81,7 @@ public class Charater : MonoBehaviour {
             characterPush.velocity = transform.up * jumpHeight;
         }
     }
+   
     void Attacks(string attacks)
     {
         if (attacks == "Neutral")
