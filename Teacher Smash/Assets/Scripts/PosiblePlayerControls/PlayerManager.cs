@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
 
+    public int PlayerNumber;
+
+    public int HP_persentage;
+    public float speed;
+    public float jumpHeight;
+    public bool grounded;
+    public int PlayerID;
+
+    public bool canMove;
+    public bool isStunned;
+    public bool isSilenced;
+
 	// Use this for initialization
 	void Start () {
 		
