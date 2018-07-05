@@ -8,7 +8,6 @@ public class Abilities : MonoBehaviour {
     //private MovementManager playerMovement;
     private Animator attackAnim;
     private Rigidbody player;
-
     private void Awake()
     {
         //playerMovement = GetComponent<MovementManager>();
@@ -18,12 +17,10 @@ public class Abilities : MonoBehaviour {
 
     private void Update()
     {
-         
         if (ultCharge < 100)
             ultCharge += Time.deltaTime;
-        
-    }
 
+    }
     public void NeutralLeft()
     {
     }
