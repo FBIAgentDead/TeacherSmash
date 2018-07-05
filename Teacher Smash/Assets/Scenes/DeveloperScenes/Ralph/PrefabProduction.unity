@@ -261,13 +261,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1105857715}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
+  m_LocalPosition: {x: 0, y: 1, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1 &1242200326
 GameObject:
   m_ObjectHideFlags: 0
@@ -485,6 +485,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcb142f0119552b498f566234751da17, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerNumber: 1
+  HP_persentage: 0
+  speed: 0
+  jumpHeight: 0
+  grounded: 0
+  PlayerID: 0
+  canMove: 1
+  isStunned: 0
+  isSilenced: 0
 --- !u!54 &1458677916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -511,7 +520,7 @@ GameObject:
   - component: {fileID: 1589031680}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: GamaManager
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -527,6 +536,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5aea251ee87ff74498b4200af1fc163a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PL_1: 
+  PL_2: 
 --- !u!4 &1589031681
 Transform:
   m_ObjectHideFlags: 0
