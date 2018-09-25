@@ -7,7 +7,9 @@ public class Abilities : MonoBehaviour {
     private float ultCharge;
     //private MovementManager playerMovement;
     private Animator attackAnim;
+    private Animation currentAnim;
     private Rigidbody player;
+
     private void Awake()
     {
         //playerMovement = GetComponent<MovementManager>();
@@ -17,9 +19,6 @@ public class Abilities : MonoBehaviour {
 
     private void Update()
     {
-        if (ultCharge < 100)
-            ultCharge += Time.deltaTime;
-
     }
     public void NeutralLeft()
     {
@@ -38,20 +37,21 @@ public class Abilities : MonoBehaviour {
     }
     public void SpecialLeft()
     {
+        attackAnim.Play("Bomb Throw");
     }
     public void SpecialRight()
     {
+        attackAnim.Play("Bomb Throw");
     }
     public void SpecialUp()
     {
+        transform.position = new Vector3(transform.position.x,transform.position.y+3,transform.position.z);
     }
     public void SpecialDown()
     {
     }
     public void Special()
     {
-        if (ultCharge > 99)
-            Debug.Log("UsedUlt");
     }
 
 }
