@@ -43,9 +43,13 @@ public class Camera : MonoBehaviour {
             {
                 Players.RemoveAt(i);
                 Logs.text = "Lost player: " + i + "! Removing from the list!\n" + Logs.text;
+                Debug.LogWarning("Player not found.. Has it been killed?");
             }
-            x += Players[i].position.x;
-            y += Players[i].position.y;
+            else
+            {
+                x += Players[i].position.x;
+                y += Players[i].position.y;
+            }
         }
         x /= Players.Count;
         y /= Players.Count;
@@ -53,14 +57,12 @@ public class Camera : MonoBehaviour {
         CheckMax();
 
         //z = (x + y) / (Players.Count * 2);
-        try
+
+        if (Players.Count > 0)
         {
             transform.position = Vector3.MoveTowards(transform.position, new Vector3(x, y, z + Offset), Speed * Time.time);
         }
-        catch
-        {
-            Logs.text = "Unable to move to: " + transform.position + "\n" + Logs.text;
-        }
+        
         x = 0;
         y = 0;
         //return transform;        
@@ -77,6 +79,7 @@ public class Camera : MonoBehaviour {
             else
             {
                 Logs.text = "Unable to find anything..\n" + Logs.text;
+                Debug.LogError("No players could be found.. Make sure they're named properly in the scene!");
             }
         }
     }
