@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Camera : MonoBehaviour {
+public class CameraCalculator : MonoBehaviour {
 
     [Header("List of players")]
     [SerializeField]
